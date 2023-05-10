@@ -24,7 +24,7 @@
 
 ## Parte 2 - Funcionalidade ⚙
 
-### Funcionalidade via Bootstrap.
+### Funcionalidade Modal feita utilizando apenas HTML, CSS e JavaScript, sem o uso de Bootstrap.
 
 <hr>
 

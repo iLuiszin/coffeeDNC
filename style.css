@@ -1,26 +1,27 @@
 .position-in-container {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
-.imgAbout .position-in-container .btn {
+.imgAbout .position-in-container button {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.2s, opacity 0.2s linear;
 }
 
-.imgAbout:hover .position-in-container .btn {
+.imgAbout:hover .position-in-container button {
     visibility: visible;
     opacity: 1;
     transition: visibility 0.2s, opacity 0.2s linear;
 }
 
+
 /* The Modal (background) */
 .custom-modal {
     position: fixed;
     /* Stay in place */
-    z-index: 9999999;
+    z-index: 3;
     /* Sit on top */
 
     /* Location of the box */
@@ -35,6 +36,7 @@
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
+
 
 }
 
@@ -72,9 +74,11 @@
     background-color: #fefefe;
     padding: 2em;
     align-items: center;
+    justify-content: space-around;
     text-align: center;
     border: 1px solid #888;
     width: 500px;
+    height: 400px;
     gap: 1em;
     margin: 2% auto;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
@@ -82,14 +86,22 @@
 }
 
 .custom-modal-content h1 {
-    font-size: 27px;
-    color: #000;
-    font-weight: lighter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 39px;
+    line-height: 20px;
+    color: #000000;
 }
 
 .custom-modal-content p {
-    color: #333333;
     font-weight: lighter;
+    font-size: 23px;
+    line-height: 40px;
+    /* or 174% */
+
+    text-align: center;
+
+    color: #000000;
 }
 
 /* Add Animation */
@@ -135,17 +147,20 @@
     top: 0;
 }
 
+.imgAbout .position-in-container button,
 .custom-modal-content button {
-    border: 1px solid #198754;
-    color: #198754;
-    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #2A3342;
     padding: .5em;
-    border-radius: 5px;
 }
 
+.imgAbout .position-in-container button:hover,
 .custom-modal-content button:hover {
     color: #fff;
-    background-color: #198754;
+    background-color: #171b24;
 }
 
 
